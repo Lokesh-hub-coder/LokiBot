@@ -446,10 +446,19 @@ function App() {
         '"': "&quot;",
         "'": "&#39;",
       })[character]);
+
+  const formatForPdf = (value) => {
+  const escaped = escapeHtml(value);
+
+  return escaped
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\n/g, "<br>");
+};
     const transcript = printable.map(({ speaker, content }) => `
       <article>
         <h2>${escapeHtml(speaker)}</h2>
-        <p>${escapeHtml(content).replace(/\n/g, "<br>")}</p>
+        <p>${formatForPdf(content)}</p>
       </article>
     `).join("");
 
@@ -465,6 +474,7 @@ function App() {
       <script>window.onload=()=>window.print();</script></body></html>`);
     printWindow.document.close();
   }
+
 
   function renderMatchInfo() {
     if (!jobMatch) return null;
@@ -482,7 +492,7 @@ function App() {
         theme={theme}
         onToggleTheme={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
         onAsk={openAssistant}
-        resumeHref={RESUME_ENDPOINT}
+        resumeHref="/Lokesh_Singh_Resume.pdf"
       />
 
       <main className="page-shell">
