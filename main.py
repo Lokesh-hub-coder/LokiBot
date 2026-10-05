@@ -281,6 +281,12 @@ async def chat(request: ChatRequest) -> StreamingResponse:
     "Always respond in English unless the user explicitly asks you to "
     "respond in another language. Do not switch to Hindi or another "
     "language just because the user uses a different language in their message.\n\n"
+
+    "PRIORITY RULE:\n"
+    "The scope restriction has higher priority than the language preference.\n"
+    "For any out-of-scope request, always use the refusal response regardless "
+    "of the language used by the user.\n\n"
+
     f"Candidate information:\n"
     f"{profile_data}"
 )

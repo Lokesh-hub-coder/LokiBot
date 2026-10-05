@@ -23,11 +23,19 @@ function Header({ theme, onToggleTheme, onAsk, resumeHref }) {
           className="theme-toggle"
           onClick={onToggleTheme}
           aria-label="Toggle theme"
-          title={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+          title={
+            theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+          }
         >
           {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
         </button>
-        <a href={resumeHref} className="cv-button" aria-label="Download Lokesh Singh resume">
+        <a
+          href={resumeHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cv-button"
+          aria-label="Open Lokesh Singh resume"
+        >
           <Download size={15} />
           <span>Resume</span>
         </a>
