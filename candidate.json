@@ -1,0 +1,37 @@
+{
+  "name": "Lokesh Singh",
+  "summary": "Computer Science and Engineering student with projects in Java/Spring Boot backend development and Python/FastAPI AI.",
+  "email": null,
+  "phone": null,
+  "education": [
+    "B.Tech in Computer Science and Engineering (2027)"
+  ],
+  "cgpa": 8.39,
+  "skills": [
+    "Java",
+    "Python",
+    "DSA",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "SQL",
+    "AWS (EC2, VPC, IAM, S3)",
+    "Docker",
+    "AI"
+  ],
+  "projects": [
+    "PayLocal - A Spring Boot backend for offline UPI payments using encrypted Bluetooth-style mesh networking, with packet routing, deduplication, and settlement simulation.",
+    "LokiAI - A fully local AI system built with Python and FastAPI, featuring a custom vector database and RAG pipeline powered by Ollama."
+  ],
+  "experiences": [],
+  "achievements": [
+    "Orange Promptathon Winner 2026"
+  ],
+  "certifications": [],
+  "social_links": {
+    "github": "https://github.com/Lokesh-hub-coder",
+    "linkedin": "",
+    "leetcode": "https://leetcode.com/u/Lokesh_leetcoder/"
+  }
+}
