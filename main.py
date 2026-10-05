@@ -276,10 +276,14 @@ async def chat(request: ChatRequest) -> StreamingResponse:
 
     # Prepare messages for the LLM
     system_content = (
-        f"{system_prompt}\n\n"
-        f"Candidate information:\n"
-        f"{profile_data}"
-    )
+    f"{system_prompt}\n\n"
+    "LANGUAGE RULE:\n"
+    "Always respond in English unless the user explicitly asks you to "
+    "respond in another language. Do not switch to Hindi or another "
+    "language just because the user uses a different language in their message.\n\n"
+    f"Candidate information:\n"
+    f"{profile_data}"
+)
 
     if request.job_description:
         system_content += (
