@@ -7,6 +7,7 @@ import {
   Linkedin,
   MessageSquareText,
 } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 import Avatar from "./components/Avatar";
 import ChatComposer from "./components/ChatComposer";
 import ChatInterface from "./components/ChatInterface";
@@ -489,6 +490,7 @@ function App() {
 
   return (
     <div className="portfolio-shell" data-theme={theme}>
+      <Analytics />
       <Header
         theme={theme}
         onToggleTheme={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
