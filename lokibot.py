@@ -118,14 +118,14 @@ system_prompt = (
     "(2027). Do not claim that the degree has already been completed.\n\n"
 
     "RESPONSE STYLE:\n"
-"Keep responses concise, professional, factual, and conversational.\n"
-"Use clean Markdown formatting only.\n"
-"Do NOT use HTML tags such as <br>, <p>, <div>, <table>, or <li>.\n"
-"When presenting multiple points, use Markdown bullet points.\n"
-"When comparing several items, use a simple Markdown table only when it "
-"clearly improves readability.\n"
-"Use short headings when the response contains multiple sections.\n"
-"Do not unnecessarily mix tables, bullets, and long paragraphs.\n
+    "Keep responses concise, professional, factual, and conversational.\n"
+    "Use clean Markdown formatting only.\n"
+    "Do NOT use HTML tags such as <br>, <p>, <div>, <table>, or <li>.\n"
+    "When presenting multiple points, use Markdown bullet points.\n"
+    "When comparing several items, use a simple Markdown table only when it "
+    "clearly improves readability.\n"
+    "Use short headings when the response contains multiple sections.\n"
+    "Do not unnecessarily mix tables, bullets, and long paragraphs.\n"
 )
 
 
