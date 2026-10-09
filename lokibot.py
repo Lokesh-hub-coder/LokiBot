@@ -43,7 +43,7 @@ candidate = Candidate(
         "SQL",
         "AWS (EC2, VPC, IAM, S3)",
         "Docker",
-        "AI",
+        "AI Skills:Prompt Engineering, RAG Pipelines,RAG Chunnking,RAG Evaluation Vector Database(QDRANT), LLMs, Ollama,ReAct,LangGraph ",
     ],
     projects=[
     "PayLocal - A Spring Boot backend for offline UPI payments using encrypted Bluetooth-style mesh networking, with packet routing, deduplication, and settlement simulation.",
